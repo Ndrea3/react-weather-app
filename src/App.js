@@ -1,25 +1,25 @@
-import "./App.css";
-import Weather from "./Weather";
-import "./Weather.css";
+import logo from './logo.svg';
+import './App.css';
 
-export default function App() {
+function App() {
   return (
     <div className="App">
-      <div className="container">
-      <h1>Weather App</h1>
-      <Weather/>
-      <footer>
-        This project was coded by Andrea Simmons and is
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
         <a
-          href="https://github.com/Ndrea3/react-weather-app"
-          rel="noreferrer"
+          className="App-link"
+          href="https://reactjs.org"
           target="_blank"
+          rel="noopener noreferrer"
         >
-          {" "}
-          open-sourced in Github
+          Learn React
         </a>
-      </footer>
-    </div>
+      </header>
     </div>
   );
 }
+
+export default App;
