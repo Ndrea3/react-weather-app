@@ -1,12 +1,10 @@
 import "./App.css";
 import Weather from "./Weather";
-import Background from "./Background";
 import "./Weather.css";
 
 export default function App() {
   return (
     <div className="App">
-      <Background/>
       <div className="container">
       <h1>Weather App</h1>
       <Weather/>
