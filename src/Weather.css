@@ -1,3 +1,16 @@
 .weather{
     color: brown;
 }
+.Weather {
+  border: 1px solid #daddda;
+  background-color: #bbe4e9;
+  border: 2px solid #84d9f3;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.7);
+  margin: 25px auto;
+  padding: 20px;
+}
+.temp-summary{
+    display: inline-flex;
+    
+}
