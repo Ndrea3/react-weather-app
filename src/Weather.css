@@ -1,6 +1,10 @@
-.weather{
-    color: brown;
-}
+form {
+ 
+  justify-content: center;
+  max-width: 900px;
+  margin-left: 170px ;
+  padding-top: 20px;}
+
 .Weather {
   border: 1px solid #daddda;
   background-color: #bbe4e9;
@@ -9,8 +13,56 @@
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.7);
   margin: 25px auto;
   padding: 20px;
+  max-width: 900px;
 }
-.temp-summary{
-    display: inline-flex;
-    
+h2 {
+  font-size: 40px;
+  color: #0e5870;
+  padding: 5px;
+  margin-left: 25px;
+}
+
+.Wecontain {
+  max-width: 900px;
+  padding: 20px;
+  margin: 15px 110px auto;
+}
+
+.cur-date {
+  font-size: 30px;
+  font-weight: 250;
+  color: #156579;
+}
+.w-desc {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 250;
+  color: #156579;
+}
+
+.weather-img img {
+  margin-left: 80px;
+  height: 175px;
+  width: 175px;
+  position: relative;
+  bottom: 30px;
+}
+.weather-img strong {
+  font-size: 80px;
+  font-weight: 350;
+}
+.weather-img small {
+  font-size: 30px;
+  position: relative;
+  top: -32px;
+}
+.w-details {
+  font-size: 20px;
+  color: #0e5870;
+}
+
+.temp-summary {
+  display: inline-flex;
+  color: #0e5870;
+  font-size: 20px;
 }
