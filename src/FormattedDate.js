@@ -9,7 +9,7 @@ export default function FormattedDate(props){
      let date =  props.date.getDate();
      let hours = props.date.getHours();
      if (hours <10) { hours = `0${hours}`};
-     if (hours=(hours+24)%24);var mid="am";
+     if ((hours=(hours+24)%24));var mid="am";
      if (hours===0){hours=12;} else if(hours>12){hours=hours%12;mid="pm";}
         
      let minutes = props.date.getMinutes();
