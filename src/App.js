@@ -14,7 +14,7 @@ export default function App() {
             🤔
           </span>
         </h1>
-        <Weather />
+        <Weather defaultCity="Quinte West"/>
         <Forecast/>
         <footer>
           This project was coded by Andrea Simmons and is
