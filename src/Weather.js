@@ -19,7 +19,7 @@ export default function Weather(props) {
           high: Math.round(response.data.main.temp_max),
           low: Math.round(response.data.main.temp_min),
           feelsLike: Math.round(response.data.main.feels_like),
-          icon: "http://openweathermap.org/img/wn/01d.png",
+          icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}.png`,
           iconMain: response.data.weather[0].icon.main
         });
     }
