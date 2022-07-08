@@ -9,7 +9,7 @@ export default function WeatherUnit(props){
 
         function showCelcius(event) {
         event.preventDefault();
-        setUnit("celcius");
+        setUnit("celcius")
                } 
     if (unit==="celcius") {
         return(
@@ -25,7 +25,7 @@ export default function WeatherUnit(props){
         <strong id="temperature">{fahr}</strong>
         <small id="celc-link"><a href="/" onClick={showCelcius} >°C</a> | °F</small>
         </span>
-        
+
       
     )
      }

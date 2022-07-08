@@ -1,4 +1,19 @@
-export default function Forecast() {
+import axios from "axios";
+
+export default function Forecast(props) {
+
+function handleResponse(response) {
+  console.log(response.data);
+}
+console.log(props);
+
+  let apiKey = "f98ba7e599adf93cd93e20273e395b25"
+  let latitude = props.coordinates.lat;
+  let longitude = props.coordinates.lon;
+  let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+
+axios.get(apiURL).then(handleResponse);
+
   return (
     <div className="forecast">
       <h4 className="forecast-name">
