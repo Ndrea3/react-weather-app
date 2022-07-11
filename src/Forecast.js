@@ -27,8 +27,8 @@ return (
             <div className="daily-weather col-2" key={index}>
               <WeatherForecastDay data={dailyForecast} />
             </div>);
-        }))}
-      </div>
+        }))};      
+     </div>
     </div>
   </div>
 );
