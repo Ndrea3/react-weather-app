@@ -1,19 +1,16 @@
 import "./App.css";
 import Weather from "./Weather";
 import "./Weather.css";
-import Background from  "./Background";
+//import Background from  "./Background";
 
 
 export default function App() {
   return (
-<div
-      style={{
-        backgroundImage: `url(${Background})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover"
-      }}
-      className="weather-app-wrap background"></div>
-  );}
+//<div style={{
+       // backgroundImage: `url(${Background})`
+      //}}
+     // ></div>
+  //);}
 
     <div className="App">
       <div className="container">
@@ -37,5 +34,5 @@ export default function App() {
         </footer>
       </div>
     </div>
-  
+  );}
 

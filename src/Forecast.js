@@ -26,19 +26,21 @@ return (
     </h4>
     <div className="daily-forecast" id="forecast">
       <div className="row">
-        {forecastData.map(function (dailyForecast, index) {
-          if (index < 5)
-            return (
-              <div className="daily-weather col-2" key={index}>
-                <WeatherForecastDay data={dailyForecast} />
-              </div>
-            );
-        })}
-        
-      </div>
-    </div>
-  </div>
-);
+       {forecastData.map(function (dailyForecast, index) {
+              if (index < 5) {
+                return (
+                  <div className="daily-weather col-2" key={index}>
+                    <WeatherForecastDay data={dailyForecast} />
+                  </div>
+                );
+              } else {
+                return null;
+              }
+            })}
+            </div>
+            </div>
+            </div>);
+
   } else {
   let apiKey = "f98ba7e599adf93cd93e20273e395b25";
   let latitude = props.coordinates.lat;
