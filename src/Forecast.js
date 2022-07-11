@@ -11,8 +11,6 @@ useEffect(() =>{
   setLoad(false);
 }, [props.coordinates]);
 
-
-
   function handleResponse(response) {
     console.log(response.data);
     setForecastData(response.data.daily);
