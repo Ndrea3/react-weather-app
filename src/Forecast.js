@@ -21,9 +21,15 @@ return (
     </h4>
     <div className="daily-forecast" id="forecast">
       <div className="row">
-        <div className="daily-weather col-2">
-        <WeatherForecastDay data={forecastData[0]}/>
-        </div>
+        {forecastData.map(function(dailyForecast, index){
+        if (index < 5)
+          return (
+            <div className="daily-weather col-2" key={index}>
+              <WeatherForecastDay data={dailyForecast} />
+            </div>
+          );
+        })}
+       
       </div>
     </div>
   </div>
