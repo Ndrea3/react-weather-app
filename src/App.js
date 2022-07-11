@@ -1,18 +1,18 @@
 import "./App.css";
 import Weather from "./Weather";
 import "./Weather.css";
-//import Background from  "./Background";
+import Background from "./Images/coffee-and-donuts-pop-color-background.png";
 
 
 export default function App() {
   return (
-//<div style={{
-       // backgroundImage: `url(${Background})`
-      //}}
-     // ></div>
-  //);}
+ <div className="App"
+      style={{
+        backgroundImage: `url(${Background})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover"
+      }}>
 
-    <div className="App">
       <div className="container">
         <h1 className="page-title">
           The Weather Be Like...
@@ -33,6 +33,6 @@ export default function App() {
           </a>
         </footer>
       </div>
-    </div>
-  );}
-
+    ;
+ </div>);
+}
