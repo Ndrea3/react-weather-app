@@ -21,18 +21,17 @@ export default function WeatherForecastDay(props) {
     return days[day];
     
   }
-    return ( 
-    <div>
-      <div className="daily-forecast-day">{day()}</div>
-          <img src={props.data.weather[0].icon} alt=""/>
-          <div className="daily-forecast-temp">
-            <span className="daily-forecast-temp-max">
-              {maxTemp()} 
-            </span>
-            <span className="daily-forecast-temp-min">
-              {minTemp()}
-            </span>
-          </div>
-          </div>
+    return (
+      <div>
+        <div className="daily-forecast-day">{day()}</div>
+        <img
+          src={`http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`}
+          alt={props.data.weather[0].description}
+        />
+        <div className="daily-forecast-temp">
+          <span className="daily-forecast-temp-max">{maxTemp()}</span>
+          <span className="daily-forecast-temp-min">{minTemp()}</span>
+        </div>
+      </div>
     );
 }
